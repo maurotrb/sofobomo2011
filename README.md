@@ -14,7 +14,7 @@ Files of interest
 -----------------
 
 - _Rakefile_
-  Used to build the different versions. Targets: book-web.pdf, book-blurb.pdf. The photos are not committed to git.
+  Used to build the different versions. Targets: book-web.pdf, book-blurb.pdf, cover-blurb.pdf. The photos are not committed to git.
   This is my first attempt at using rake, so comments are welcomed.
 
 - _common-book.tex_
@@ -54,6 +54,7 @@ The main differences among my work and Eric's one:
 - use overpic package to layout text over images (that's for the cover images of the web book)
 - use pstrick and pst-barcode packages to create a QR code
 - use pstrick package to create the cover of the blurb book
+- use rake to build the books
 
 Contacts
 --------

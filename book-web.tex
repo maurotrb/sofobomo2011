@@ -1,0 +1,192 @@
+%
+% Senigallia Cemetery. The Old Part.
+% (c) 2011 Mauro Taraborelli (MauroTaraborelliPhoto@gmail.com).
+% This work is licensed under a Creative Commons Attribution-Share Alike
+% 3.0 Unported License
+% See http://creativecommons.org/licenses/by-sa/3.0/
+%
+% Mauro Taraborelli makes no representation about the suitability or accuracy
+% of this software or data for any purpose, and makes no warranties,
+% either express or implied, including merchantability and fitness for a
+% particular purpose or that the use of this software or data will not
+% infringe any third party patents, copyrights, trademarks, or other
+% rights.  The software and data are provided "as is". 
+% 
+% Derived from the work 'Chickens, Anyone?' by Eric R. Jeschke
+% http://redskiesatnight.com/books/pod/latex-templates-for-pod-publishing-with-blurb-com/
+% (c) 2006 Eric R. Jeschke (eric@redskieatnight.com).
+%
+% [top-level file]
+\nonstopmode
+
+\documentclass
+[ 10pt ,
+  final ,
+  openany ]
+{book}
+
+% Used to set page size and margin
+% Same dimensions as Blurb book, without the bindingoffset
+\usepackage
+[ paperwidth=9.625in ,
+  paperheight=8.25in , 
+  % set total to the dimensions of the printed part
+  total={8in,7.75in} ,
+  % include header/footer/margin notes in printed area
+  twoside ,
+  includeall ,
+  nomarginpar ,
+  ignorehead=false ,
+  ignorefoot=false ,
+  ignoremp=false ,
+  % center printed area on page
+  vcentering ,
+  hcentering ]
+{geometry}
+% width of margin notes area
+%\setlength{\marginparwidth}{0in}
+% distance between margin and paragraph
+%\setlength{\marginparsep}{0in}
+% footer configuration 
+\setlength{\footnotesep}{10pt}
+% header configuration 
+\setlength{\headheight}{10pt}
+\setlength{\headsep}{0.1in}
+% paragraph indentations
+\setlength{\parindent}{0in}
+% amount of space before each new paragraph begins
+\setlength{\parskip}{1em}
+
+% used to include the photos
+\usepackage{graphicx}
+% where can I find the photos that will be imported for this version
+\graphicspath{{./photos.web/}}
+
+% used to position text over images (covers)
+\usepackage[abs]{overpic}
+\setlength\unitlength{1in}
+
+% used for QR code
+\usepackage{pstricks}
+\usepackage{pst-barcode}
+
+% used for multilingual text
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\setotherlanguages{italian}
+% used for parallel columns
+\usepackage[SeparatedFootnotes]{parallel}
+
+% in case you want to embed any hyperlinks
+% turn on colorlinks to avoid the nasty box around the link
+\usepackage
+[ colorlinks=true ,
+  urlcolor=black ]
+{hyperref}
+
+% used during design, to create lore ipsum text
+\usepackage{lipsum}
+
+% Metadata
+\title{Senigallia Cemetery. The Old Part.}
+\author{Mauro Taraborelli}
+%%%%%%%%% PDF stuff, IF USING xelatex %%%%%%%%%
+\special{pdf:docinfo <<
+/Title (Senigallia Cemetery. The Old Part.) % set your title here
+/Author (Mauro Taraborelli) % set author name
+/Subject (Senigallia Cemetery) % set subject
+/Keywords (cemetery, colombarium, gates, flowers, decorations, Italy, photography) % set keywords
+  >>
+}
+
+% include common fonts definition
+\include{fonts}
+% include common color definition
+\include{colors}
+
+% begin the document and suppress page numbers
+\begin{document}
+\pagestyle{empty}
+
+% front cover for web version
+
+\vspace*{\fill}
+
+\begin{overpic}
+[ width=8in ,
+%  grid ,
+  tics=1 ]
+{sofobomo2011-2}
+    \put(0.25,5.25){\fontsize{.3in}{.3in}\selectfont \textbf{\textsf{\textsc{\textcolor{white}{Mauro Taraborelli}}}}}
+    \put(0.25,4.75){\fontsize{.45in}{.45in}\selectfont \textbf{\textsf{\textcolor{MyGold}{Senigallia Cemetery}}}}
+    \put(0.25,4.35){\fontsize{.45in}{.45in}\selectfont \textbf{\textsf{\textcolor{MyGold}{The Old Part}}}}
+\end{overpic}
+
+\vspace*{\fill}
+
+\newpage
+
+% bring in the rest of the content which is in common with the book version
+\include{common-book}
+
+\newpage
+
+% back cover for web version
+\pagestyle{empty}
+
+% bilingual blurb
+\begin{Parallel}{0.47\textwidth}{0.47\textwidth}
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{\textsf{\large Senigallia Cemetery. The Old Part.}}
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{\textsf{\large Il cimitero di Senigallia. La parte antica.}}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Senigallia cemetery is a monumental cemetery that dates back
+        to the second half of the 19\textsuperscript{th} century.
+        It covers the slopes of one of the hills that surround the town
+        and walking trough its rows is of visual and historic interest.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Il cimitero di Senigallia è un cimitero monumentale che risale
+        alla secondà metà del XIX secolo.
+        Occupa i pendii di una delle colline che circondano la città
+        e camminare tra le sue file è di interesse visuale e storico.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        This book is a photographic journey in the old part of the Senigallia cemetery,
+        presented through four visual themes:
+        colombarium, gates, flowers and plants, decorations.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Questo libro è un viaggio fotografico nella parte antica del cimitero di Senigallia,
+        presentato attraverso quattro temi visuali:
+        colombari, cancelli, fiori e piante, decorazioni.
+    \end{italian}
+}
+\ParallelPar
+\end{Parallel}
+
+\vspace*{\fill}
+
+% rear cover image
+\begin{center}
+\includegraphics[width=5in]{sofobomo2011-1}
+\end{center}
+
+% close the document environment
+\end{document}

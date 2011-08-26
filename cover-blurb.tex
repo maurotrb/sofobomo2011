@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+
+\usepackage[dvipsnames]{pstricks}
+\usepackage{lipsum}
+
+\usepackage{graphicx}
+% where can I find the photos that will be imported for this version
+\graphicspath{{./photos.book/}}
+
+% separate out font configuration
+\include{fonts}
+% separate out color configuration
+\include{colors}
+
+% for Blurb, set this to the actual desired size of the cover as
+% indicated by the size calculator
+\usepackage
+[ paperwidth=19.431in ,
+  paperheight=8.25in , 
+  margin=0in
+]
+{geometry}
+
+% paragraph indentations
+\setlength{\parindent}{0in}
+% amount of space before each new paragraph begins
+\setlength{\parskip}{0in}
+
+\title{Senigallia Cemetery | Il cimitero di Senigallia}
+\author{Mauro Taraborelli}
+
+%%%%%%%%% PDF/X-3 stuff, necessary for Blurb IF USING xelatex %%%%%%%%%
+\special{pdf:docinfo <<
+/Title (Senigallia Cemetery, The Old Part)   % set your title here
+/Author (Mauro Taraborelli)       % set author name
+/Subject (Senigallia Cemetery)          % set subject
+/Keywords (cemetery, colombarium, gates, flowers, decorations, Italy, photography) % set keywords
+/Trapped (False)
+/GTS_PDFXVersion (PDF/X-3:2002)
+% must have a trim box, but I think Blurb ignores the values
+/TrimBox [0.00000 9.00000 684.36000 585.00000] >>
+}
+\special{pdf:put @catalog <<
+/OutputIntents [ <<
+/Info (none)
+/Type /OutputIntent
+/S /GTS_PDFX
+/OutputConditionIdentifier (Blurb.com)
+/RegistryName (http://www.color.org/)
+>> ] >>
+}
+
+% for multilingual work you may need polyglossia;
+% change the default language and the others to the ones you want
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\setotherlanguages{italian}
+
+% for parallel columns
+\usepackage{parallel}
+
+% begin the document and suppress page numbers
+\begin{document}
+\pagestyle{empty}
+
+% create the box with the front cover picture
+\newsavebox\FIBox
+\sbox\FIBox{\includegraphics[height=8.25in]{sofobomo2011-2-cover}}
+% create the box with the rear cover picture
+\newsavebox\FRBox
+\sbox\FRBox{\includegraphics[height=4in]{sofobomo2011-1}}
+
+% set up the picture environment
+\psset{unit=1in}
+\begin{pspicture}(\paperwidth,\paperheight)
+
+% create a black background
+\psframe[fillstyle=solid,fillcolor=black](0,0)(19.431,8.25)
+%\psframe[fillstyle=solid,fillcolor=white](9.625,0)(9.806,8.25)
+
+% place the front cover picture
+\rput[lb](9.806,0){\usebox\FIBox}
+% place the rear cover picture
+\rput[lb](2.312,0){\usebox\FRBox}
+
+% put the text on the front cover
+\rput[lb](10.50,6.35){\fontsize{.4in}{.4in}\selectfont \textbf{\textsf{\textsc{\color{White}{Mauro Taraborelli}}}}}
+\rput[lb](10.50,5.45){\fontsize{.6in}{.6in}\selectfont \textbf{\textsf{\color{MyGold}{Senigallia Cemetery}}}}
+\rput[lb](10.50,5.10){\fontsize{.6in}{.6in}\selectfont \textbf{\textsf{\color{MyGold}{The Old Part}}}}
+
+% put the text on the spine (note the rotation over 270 degrees)
+\rput[l]{270}(9.720,7.75){\textbf{\textsf{\textsc{\color{White}{\scriptsize Mauro Taraborelli}}}}}
+\rput[l]{270}(9.720,6.80){\textbf{\textsf{\color{MyGold}{\scriptsize Senigallia Cemetery. The Old Part.}}}}
+
+% put the publisher’s logo on the spine
+%\rput[b](9.745,0.75){\color{white}{\fbox{\Logo M}}}
+
+% Create a Box containing the text for the back cover
+\newsavebox\Blurbbox
+\sbox\Blurbbox{\begin{minipage}{7in}
+\textcolor{white}{
+\begin{Parallel}{0.47\textwidth}{0.47\textwidth}
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{\textsf{\color{MyGold}{\large Senigallia Cemetery. The Old Part.}}}
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{\textsf{\color{MyGold}{\large Il cimitero di Senigallia. La parte antica.}}}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Senigallia cemetery is a monumental cemetery that dates back
+        to the second half of the 19\textsuperscript{th} century.
+        It covers the slopes of one of the hills that surround the town
+        and walking trough its rows is of visual and historic interest.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Il cimitero di Senigallia è un cimitero monumentale che risale
+        alla secondà metà del XIX secolo.
+        Occupa i pendii di una delle colline che circondano la città
+        e camminare tra le sue file è di interesse visuale e storico.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        This book is a photographic journey in the old part of the Senigallia cemetery,
+        presented through four visual themes:
+        colombarium, gates, flowers and plants, decorations.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Questo libro è un viaggio fotografico nella parte antica del cimitero di Senigallia,
+        presentato attraverso quattro temi visuali:
+        colombari, cancelli, fiori e piante, decorazioni.
+    \end{italian}
+}
+\ParallelPar
+\end{Parallel}
+}
+\end{minipage}}
+% And position the box
+\rput[tl](1.312,7.5){\usebox\Blurbbox}
+
+% Then we close all open environments
+\end{pspicture}
+\end{document}

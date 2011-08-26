@@ -1,0 +1,144 @@
+%
+% Senigallia Cemetery. The Old Part.
+% (c) 2011 Mauro Taraborelli (MauroTaraborelliPhoto@gmail.com).
+% This work is licensed under a Creative Commons Attribution-Share Alike
+% 3.0 Unported License
+% See http://creativecommons.org/licenses/by-sa/3.0/
+%
+% Mauro Taraborelli makes no representation about the suitability or accuracy
+% of this software or data for any purpose, and makes no warranties,
+% either express or implied, including merchantability and fitness for a
+% particular purpose or that the use of this software or data will not
+% infringe any third party patents, copyrights, trademarks, or other
+% rights.  The software and data are provided "as is". 
+% 
+% Derived from the work 'Chickens, Anyone?' by Eric R. Jeschke
+% http://redskiesatnight.com/books/pod/latex-templates-for-pod-publishing-with-blurb-com/
+% (c) 2006 Eric R. Jeschke (eric@redskieatnight.com).
+%
+% [top-level file]
+\nonstopmode
+
+\documentclass
+[ 10pt ,
+  final ,
+  openany ]
+{book}
+
+% Used to set page size and margin
+% Same dimensions as Blurb book, without the bindingoffset
+\usepackage
+[ paperwidth=9.625in ,
+  paperheight=8.25in , 
+  % amount we 'lose' (visually) due to the binding
+  % left and right pages are offset a bit to the sides
+  % (typically looks better for most kinds of bindings)
+  bindingoffset=0.25in,
+  % set total to the dimensions of the printed part
+  total={8in,7.75in} ,
+  % include header/footer/margin notes in printed area
+  twoside ,
+  includeall ,
+  nomarginpar ,
+  ignorehead=false ,
+  ignorefoot=false ,
+  ignoremp=false ,
+  % center printed area on page
+  vcentering ,
+  hcentering ]
+{geometry}
+% width of margin notes area
+%\setlength{\marginparwidth}{0in}
+% distance between margin and paragraph
+%\setlength{\marginparsep}{0in}
+% footer configuration 
+\setlength{\footnotesep}{10pt}
+% header configuration 
+\setlength{\headheight}{10pt}
+\setlength{\headsep}{0.1in}
+% paragraph indentations
+\setlength{\parindent}{0in}
+% amount of space before each new paragraph begins
+\setlength{\parskip}{1em}
+
+% used to include the photos
+\usepackage{graphicx}
+% where can I find the photos that will be imported for this version
+\graphicspath{{./photos.book/}}
+
+% used for QR code
+\usepackage{pstricks}
+\usepackage{pst-barcode}
+
+% used for multilingual text
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\setotherlanguages{italian}
+% used for parallel columns
+\usepackage[SeparatedFootnotes]{parallel}
+
+% in case you want to embed any hyperlinks
+% turn on colorlinks to avoid the nasty box around the link
+\usepackage
+[ colorlinks=true ,
+  urlcolor=black ]
+{hyperref}
+
+% used during design, to create lore ipsum text
+\usepackage{lipsum}
+
+% Metadata
+\title{Senigallia Cemetery. The Old Part.}
+\author{Mauro Taraborelli}
+%%%%%%%%% PDF stuff, IF USING xelatex %%%%%%%%%
+\special{pdf:docinfo <<
+/Title (Senigallia Cemetery. The Old Part.) % set your title here
+/Author (Mauro Taraborelli) % set author name
+/Subject (Senigallia Cemetery) % set subject
+/Keywords (cemetery, colombarium, gates, flowers, decorations, Italy, photography) % set keywords
+/Trapped (False)
+/GTS_PDFXVersion (PDF/X-3:2002)
+% must have a trim box, but I think Blurb ignores the values
+/TrimBox [0.00000 9.00000 684.36000 585.00000] >>
+}
+\special{pdf:put @catalog <<
+/OutputIntents [ <<
+/Info (none)
+/Type /OutputIntent
+/S /GTS_PDFX
+/OutputConditionIdentifier (Blurb.com)
+/RegistryName (http://www.color.org/)
+>> ] >>
+}
+
+% include common fonts definition
+\include{fonts}
+% include common color definition
+\include{colors}
+
+% begin the document and suppress page numbers
+\begin{document}
+\pagestyle{empty}
+
+% interior facing page for book version
+\begin{center}
+
+\vspace*{2in}
+
+{\fontsize{.4in}{.4in}\selectfont \textbf{\textsf{\textsc{Mauro Taraborelli}}}}
+
+\vspace*{0.5in}
+
+{\fontsize{.6in}{.6in}\selectfont \textbf{\textsf{Senigallia Cemetery. The Old Part.}}}
+
+{\fontsize{.4in}{.4in}\selectfont \textbf{\textsf{Il cimitero di Senigallia. La parte antica.}}}
+
+\end{center}
+
+\newpage
+
+% bring in the rest of the content which is in common with the book version
+\include{common-book}
+
+% close the document environment
+\end{document}

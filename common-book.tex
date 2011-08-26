@@ -1,0 +1,881 @@
+%
+% Senigallia Cemetery. The Old Part.
+% (c) 2011 Mauro Taraborelli (MauroTaraborelliPhoto@gmail.com).
+% This work is licensed under a Creative Commons Attribution-Share Alike
+% 3.0 Unported License
+% See http://creativecommons.org/licenses/by-sa/3.0/
+%
+% Mauro Taraborelli makes no representation about the suitability or accuracy
+% of this software or data for any purpose, and makes no warranties,
+% either express or implied, including merchantability and fitness for a
+% particular purpose or that the use of this software or data will not
+% infringe any third party patents, copyrights, trademarks, or other
+% rights.  The software and data are provided "as is". 
+% 
+% Derived from the work 'Chickens, Anyone?' by Eric R. Jeschke
+% http://redskiesatnight.com/books/pod/latex-templates-for-pod-publishing-with-blurb-com/
+% (c) 2006 Eric R. Jeschke (eric@redskieatnight.com).
+%
+% common information to the web version and book version
+%
+% images will be imported by searching the paths set with \graphicspath
+% the book.tex or web.tex sets this so the correct resolution images end
+% up in the correct document.
+% 
+% cover is done elsewhere, as this is usually broken out from the 
+% ``text block'' for POD publishing--see book.tex
+%
+
+\vspace*{\fill}
+
+{\large Copyright \textcopyright{} 2011 Mauro Taraborelli.}
+
+\begin{Parallel}{0.47\textwidth}{0.47\textwidth}
+\ParallelLText{
+    \begin{english}[variant=american]
+        {\large All Rights Reserved.}
+
+        This book may not be reproduced in any form without written permission of the author. 
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        {\large Tutti i diritti riservati.}
+
+        Questo libro non può essere riprodotto in alcuna forma senza il permesso scritto dell'autore.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        First Edition. PDF created \today.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Prima edizione. PDF creato il \today.
+    \end{italian}
+}
+\ParallelPar
+\end{Parallel}
+
+\begin{center}
+    {\tt MauroTaraborelliPhoto@gmail.com}
+
+    {\tt www.maurotaraborelliphoto.com}
+\end{center}
+
+\newpage
+
+\pagecolor{MyGray}
+\vspace*{2in}
+
+\hfill{\textsf{\textcolor{white}{\Huge Preface}}}
+
+\hfill{\textsf{\textcolor{white}{\LARGE Prefazione}}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagecolor{white}
+\pagestyle{plain}
+
+\begin{Parallel}{0.47\textwidth}{0.47\textwidth}
+\ParallelLText{
+    \begin{english}[variant=american]
+        Senigallia is a port town on Italy's Adriatic coast, in the Marche region.
+        The town is one of the most famous seaside resorts of the region and in
+        the summer months its beaches are full of tourists.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Senigallia è una città di mare sulla costa adriatica italiana, nella regione Marche.
+        La città è una delle più famose località turistiche della regione e, nei mesi estivi,
+        le sue spiagge sono piene di turisti.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Imagine for a moment that you are on vacation in Senigallia.
+        Leave for a few hours the crowded beach and drive your car to the hills that surround Senigallia,
+        directed to the town of Corinaldo.
+        After a very few miles turn right, leaving the main road, and reach the top of a small hill.
+        You will see a little square with a lawn surrounded by trees and an ancient church:
+        that is \emph{Santa Maria delle Grazie}.
+        Leave your car and go toward the church.
+        On the left you will see a simple gate: it will be open.
+        Walk past the gate and follow the road around the church.
+        Your are walking in a little wood called \emph{Selva delle Grazie}.
+        After a hundred and fifty feet you will walk past another gate:
+        now you are in the Senigallia cemetery.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Immagina per un momento di essere in vacanza a Senigallia.
+        Lascia per poche ore la spiaggia affollata e vai con la tua auto verso le colline
+        che circondano Senigallia, diretto alla città di Corinaldo.
+        Dopo pochissimi chilometri gira a destra, lasciando la strada principale,
+        e raggiungi la cima di una piccola collina.
+        Vedrai una piccola piazza con un prato circondato da alberi e una chiesa antica:
+        si tratta di Santa Maria delle Grazie.
+        Lascia l'auto e vai verso la chiesa. Sulla sinistra vedrai una semplice cancello:
+        sarà aperto.
+        Supera il cancello e segui la strada che costeggia la chiesa.
+        Stai camminando in un piccolo bosco chiamato la Selva delle Grazie.
+        Dopo cinquanta metri supererai un altro cancello:
+        adesso sei nel cimitero di Senigallia.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Senigallia cemetery is an example of 19\textsuperscript{th} century monumental cemetery
+        such as those of Milan, Turin, Naples
+        \footnote{In 1804, the Napoleon's Edict of Saint--Cloud forbade burial 
+        in churches and within settlements for hygienic reasons and foresaw the compulsory
+        building of cemeteries outside the populated areas.
+        In 1806 the edict was applied to the Kingdom of Italy and in 1809 to the Papal State,
+        where Senigallia was located at the time.
+        With the new regulations in place, a Renaissance in cemetery planning and architecture
+        took place. Many of the monumental cemetery of the big Italian cities dates back to
+        this period. But outside few rich Italian cities the application of the edict was
+        much slower.}.
+        It is less rich and more chaotic than those cemeteries, but interesting nonetheless,
+        if you consider its troubled history and the meager means that a small town like
+        Senigallia had to build it
+        \footnote{Senigallia tried to build a cemetery suitable for its population during
+        all the 19\textsuperscript{th} century. But economic quandary and difficulty to find
+        a proper location slowed down the decision.
+        The definitive site was decide in the 1869 and the cemetery opened in 1871.
+        But the original project was not completed until the '20 of the 20\textsuperscript{th} century.
+        See the recommended reading at the end of the book.}.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Il cimitero di Senigallia è un esempio di cimitero monumentale ottocentesco come quelli
+        di Milano, Torino, Napoli.
+        \footnote{Nel 1804, l'editto napoleonico di Saint--Cloud vietò la sepoltura
+        nelle chiese e all'interno di luoghi abitati per ragioni igieniche e rese obbligatorio
+        la costruzione di cimiteri al di fuori delle aree popolate.
+        Nel 1806 l'editto fu applicato al Regno di Italia e nel 1809 allo Stato Papale,
+        dove Senigallia era presente all'epoca.
+        Con la nuova legge, si avvio un Rinascimento nella progettazione e nell'architettura dei cimiteri.
+        Molti dei cimiteri monumentali delle grandi città italiane risalgono a questo periodo.
+        Ma al di fuori delle poche città italiane ricche, l'applicazione dell'editto fu molto più lenta.}
+        È meno ricco e più caotico di quei cimiteri, ma è comunque interessante,
+        se tieni conto della sua storia travagliata e degli scarsi mezzi per costruirlo che aveva
+        una piccola città come Senigallia.
+        \footnote{Senigallia tentò di costruire un cimitero adatto alla sua popolazione nel corso
+        di tutto il XIX secolo.
+        Ma problemi economici e difficoltà nel trovare un luogo adatto rallentarono la decisione.
+        Il sito definitivo fu deciso nel 1869 ed il cimitero aprì nel 1871.
+        Ma il progetto originario non fu completato che negli anni 20 del XX secolo.
+        Vedi le letture consigliate alla fine del libro.}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        The cemetery covers the whole hill beneath you, but the actual size is hidden behind trees and tombs.
+        You will see the oldest part of the cemetery, with terraces on the hillside slopes
+        divided by a grid of small roads.
+        The original layout was of rectangular fields with graves at the center and monumental tombs on the borders.
+        As times went by, lack of burial space forced to fill the fields with individual or family tombs.
+        Moreover some of the older tombs were demolished and rebuilt.
+        So you will see ancient and modern tombs mixed together.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Il cimitero copre l'intera collina sotto di te, ma la reale estensione è nascosta
+        dagli alberi e dalle tombe.
+        Vedrai la parte più antica del cimitero, con terrazzamenti lungo la collina divisi
+        da una griglia di piccole strade.
+        La disposizione iniziale prevedeva campi comuni rettangolari circondati da sepolcri monumentali.
+        Col passare del tempo, la mancanza di spazio per le nuove sepolture ha costretto a
+        riempire i campi comuni con sepolcri individuali o di famiglia.
+        Inoltre alcune delle tombe più antiche sono state demolite e ricostruite.
+        Così vedrai tombe antiche e tombe moderne insieme.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        If you come here in the early morning or at noon, you will probably be the only visitor.
+        Take your time, wander through its rows walking slowly and looking at the details.
+        You will discover its visual interest, its historic interest, its human interest.        
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Se vieni qui di primo mattino o a mezzogiorno, sarai probabilmente il solo visitatore.
+        Prenditi tempo, vaga tra le sue file camminando lentamente e facendo attenzione ai dettagli.
+        Scoprirai il suo interesse visuale, il suo interesse storico, il suo interesse umano.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        I myself wandered through the old part of the Senigallia cemetery in a hot summer day.
+        The photos in this book gives a glimpse of what I saw and of what you could see.
+        The themes in which I divided the photos are a suggestion for you to start your
+        exploration. They certainly don't exhaust the visual opportunities of the cemetery. 
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Ho vagato io stesso nella parte antica del cimitero di Senigallia in una calda giornata estiva.
+        Le foto di questo libro sono un accenno di cosa ho visto e di cosa tu puoi vedere.
+        I temi in cui ho diviso le foto sono un suggerimento per iniziare la tua esplorazione.
+        Non esauriscono certo le possibilità visuali del cimitero.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{Colombarium}
+        \footnote{
+            A columbarium is a place for the respectful and usually public storage of cinerary urns
+            (i.e. urns holding a deceased’s cremated remains).
+            The term comes from the Latin columba (dove) and originally referred to compartmentalized
+            housing for doves and pigeons (see dovecote). See more details at
+            \href{http://en.wikipedia.org/wiki/Columbarium}{en.wikipedia.org/wiki/Columbarium}.
+        }.
+        The colombarium located in this part of the cemetery dates back to the the first years
+        of the 20\textsuperscript{th} century, and it shows.
+        The conditions are poor and many niches are no more maintained.
+        But you will find images that takes you back to another era and some clues that somebody
+        still care about these old tombs. 
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{Colombari}
+        \footnote{
+            Il Colombario (dal latino columbarium) è un tipo di costruzione funeraria divisa in loculi
+            orizzontali ciascuno dei quali atto ad ospitare una bara. In archeologia per colombario
+            si intende un tipo di camera sepolcrale composta da nicchie in cui venivano conservate le urne
+            con le ceneri dei defunti. Il nome deriva dal fatto che le nicchie erano ricavate nella muratura
+            con apertura anteriore che ricorda appunto le costruzioni per il ricovero e l'allevamento dei colombi.
+            Per maggiori dettagli vedi
+            \href{http://it.wikipedia.org/wiki/Colombario}{it.wikipedia.org/wiki/Colombario}.
+        }.
+        Il colombario presente in questa parte del cimitero risale ai primi anni del XX secolo, e si vede.
+        Le condizioni sono pessime e molte nicchie non sono più manutenute.
+        Ma troverai immagini che ti porteranno indietro ad un altra era e qualche indizio che
+        qualcuno si preoccupa ancora di queste vecchie tombe.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{Gates}.
+        Mausoleums act as both monument and place of interment, usually for well-off families.
+        I was fascinated by their gates, especially by those of the oldest mausoleums:
+        their forms, their styles, their conditions.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{Cancelli}.
+        Le cappelle sono sia dei monumenti che dei luoghi di sepoltura, di solito per le famiglie abbienti.
+        Sono stato affascinato dai loro cancelli, specialmente da quelli delle cappelle più antiche:
+        la loro forma, il loro stile, le loro condizioni.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{Flowers and Plants}.
+        Flowers and plants are used to grace the tomb and honor the loved ones.
+        But sometimes they are forgotten and parched by the time and by the heat.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{Fiori e piante}.
+        Fiori e piante sono usate per decorare le tombe e onorare le persone amate.
+        Ma qualche volta sono dimenticati e seccati dal tempo e dal caldo.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        \textbf{Decorations}.
+        Simple as a crying woman. Complex and with many symbols.
+        One of the most interesting aspects of Senigallia cemetery.
+        See the recommended reading at the end of the book for more details.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        \textbf{Decorazioni}.
+        Semplici come una donna che piange. Complesse e con molti simboli.
+        Uno degli aspetti più interessanti del cimitero di Senigallia.
+        Vedi le letture consigliate alla fine del libro per approfondire.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+    \end{italian}
+}
+\ParallelPar
+\end{Parallel}
+
+\newpage
+
+%To center all the caption
+\begin{center}
+
+\pagecolor{MyGray}
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\textcolor{white}{\Huge Senigallia Cemetery. The Old Part.}}}
+
+\hfill{\textsf{\textcolor{white}{\LARGE Il cimitero di Senigallia. La parte antica.}}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagecolor{white}
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-1}
+
+{Cemetery Entrance, from \emph{Selva delle Grazie}}\\
+{\footnotesize Entrata del cimitero, dalla Selva delle Grazie}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-2}
+
+{The Battaglia Family Grave, Detail}\\
+{\footnotesize La tomba della famiglia Battaglia, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\Huge Colombarium}}
+
+\hfill{\textsf{\LARGE Colombari}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-3}
+
+{Colombarium behind Mausoleums Grove, Detail}\\
+{\footnotesize Colombario dietro il boschetto delle cappelle, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-4}
+
+{Colombarium behind Mausoleums Grove, Detail}\\
+{\footnotesize Colombario dietro il boschetto delle cappelle, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-5}
+
+{Colombarium behind Mausoleums Grove, Detail}\\
+{\footnotesize Colombario dietro il boschetto delle cappelle, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-6}
+
+{Liberty Colombarium, Detail}\\
+{\footnotesize Colombario liberty, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-7}
+
+{Liberty Colombarium, Detail}\\
+{\footnotesize Colombario liberty, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-8}
+
+{Liberty Colombarium, Detail}\\
+{\footnotesize Colombario liberty, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-9}
+
+{Liberty Colombarium, Detail}\\
+{\footnotesize Colombario liberty, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-10}
+
+{Liberty Colombarium, Detail}\\
+{\footnotesize Colombario liberty, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\Huge Gates}}
+
+\hfill{\textsf{\LARGE Cancelli}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-11}
+
+{The Angeloni Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Angeloni}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-12}
+
+{The Adami--Manara Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Adami--Manara}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-13}
+
+{The Clari Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Clari}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-14}
+
+{The Clari Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Clari}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-15}
+
+{The Girolimini Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Girolimini}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-16}
+
+{The Becci--Pergolesi Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Becci--Pergolesi}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-17}
+
+{The Tacchi Family Mausoleum Gate}\\
+{\footnotesize Cancello della cappella della famiglia Tacchi}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-18}
+
+{Mausoleum without a Name}\\
+{\footnotesize Cappella senza nome}
+\vspace*{\fill}
+\newpage
+
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\Huge Flowers and Plants}}
+
+\hfill{\textsf{\LARGE Fiori e piante}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-19}
+
+{Tinted Bush}\\
+{\footnotesize Cespuglio colorato}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-20}
+
+{Parched Flowers}\\
+{\footnotesize Fiori secchi}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-21}
+
+{Chained Flowers}\\
+{\footnotesize Fiori incatenati}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-22}
+
+{Green Flowers}\\
+{\footnotesize Fiori verdi}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-23}
+
+{Fallen Flowers}\\
+{\footnotesize Fiori caduti}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-24}
+
+{Flowers in the Glass Pot}\\
+{\footnotesize Fiori nel vaso di vetro}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-25}
+
+{Grew on Rocks}\\
+{\footnotesize Cresciuti sulla roccia}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-26}
+
+{Upright}\\
+{\footnotesize Eretto}
+\vspace*{\fill}
+\newpage
+
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\Huge Decorations}}
+
+\hfill{\textsf{\LARGE Decorazioni}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-27}
+
+{Count Pietro Benedetti Grave, Detail}\\
+{\footnotesize Sepolcro del conte Pietro Benedetti, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-28}
+
+{Count Pietro Benedetti Grave, Detail}\\
+{\footnotesize Sepolcro del conte Pietro Benedetti, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-29}
+
+{The Angeloni--Sollazzi Family Grave, Detail}\\
+{\footnotesize Deposito della famiglia Angeloni--Sollazzi, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-30}
+
+{The Fantini Family Grave, Detail}\\
+{\footnotesize Deposito della famiglia Fantini, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-31}
+
+{The Fantini Family Tomb, Detail}\\
+{\footnotesize Deposito della famiglia Fantini, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-32}
+
+{Marietta Sbarbati Grave, Detail}\\
+{\footnotesize Tomba di Marietta Sbarbati, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-33}
+
+{The Francesco Canducci Family Grave, Detail}\\
+{\footnotesize Deposito della famiglia Francesco Canducci}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-34}
+
+{The Benedetti Forastieri Family Grave, Detail}\\
+{\footnotesize Tomba della famiglia Benedetti Forastieri, dettaglio}
+\vspace*{\fill}
+\newpage
+
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\Huge Looking Outside}}
+
+\hfill{\textsf{\LARGE Guardando all'esterno}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagestyle{plain}
+
+\includegraphics[width=8in]{sofobomo2011-35}
+
+{The Hills around Senigallia}\\
+{\footnotesize Le colline attorno Senigallia}
+\vspace*{\fill}
+\newpage
+
+\includegraphics[width=8in]{sofobomo2011-36}
+
+{The Town of Senigallia and the Seaside}\\
+{\footnotesize La città di Senigallia ed il mare}
+\vspace*{\fill}
+\newpage
+
+% End centering for the caption
+\end{center}
+
+\pagecolor{MyGray}
+\pagestyle{empty}
+\vspace*{2in}
+
+\hfill{\textsf{\textcolor{white}{\Huge Colophon}}}
+
+\hfill{\textsf{\textcolor{white}{\LARGE Colofone}}}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+\pagecolor{white}
+\pagestyle{plain}
+
+\begin{Parallel}{0.47\textwidth}{0.47\textwidth}
+\ParallelLText{
+    \begin{english}[variant=american]
+        {\textsf{{\LARGE About this book}}}
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        {\textsf{{\LARGE A proposito di questo libro}}}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Solo Photo Book Month (\href{http://sofobomo.org}{\tt sofobomo.org}) 
+        is a DIY project to make a photo book in one month.
+        All of the photos must be taken and the book laid out and processed 
+        into a PDF in 31 days.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Solo Photo Book Month (\href{http://sofobomo.org}{\tt sofobomo.org}) 
+        è un progetto fai da te per creare un libro fotografico in un mese.
+        In 31 giorni bisogna scattare tutte le foto, progettare il libro
+        e creare il PDF.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        This is my first year participating in the event and I am glad I did it.
+        I have been thinking about the Senigallia cemetery for some years now.
+        I studied its history and the history of some of its monuments (see recommended reading).
+        I thought about the best photographic approach and I took many many photos.
+        But in the end, I didn't find the right ``inspiration'' and nothing was concluded.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Questo è il primo anno che partecipo all'evento e sono contento di averlo fatto.
+        Era da qualche anno che pensavo al cimitero di Senigallia.
+        Ho studiato la sua storia e la storia di alcuni dei suoi monumenti (vedi le letture consigliate).
+        Ho pensato al migliore approccio fotografico e ho fatto molte molte foto.
+        Ma alla fine, non ho trovato la giusta ``ispirazione'' e non ho concluso niente.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        When I decided to participate at SoFoBoMo, I tackled those project again.
+        This time, I didn't try to plan or to think in advance about the photos.
+        I went to the Senigallia cemetery in an afternoon of a hot day of August.
+        I wandered through the places that I already visited many times and
+        I took photos of whatever I found interesting.
+        In the following days, choosing and processing the photos,
+        the themes of this book emerged naturally.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Quando ho deciso di partecipare a SoFoBoMo, ho affrontato ancora quel progetto.
+        Questa volta, non ho cercato di pianificare o di pensare in anticipo alle foto.
+        Sono andato al cimitero di Senigallia in un pomeriggio di un caldo giorno di Agosto.
+        Ho camminato per i luoghi che avevo già visitato molte volte e
+        ho fotografato quello che trovavo interessante.
+        Nei giorni successivi, selezionando ed elaborando le foto, i temi di questo libro
+        sono emersi naturalmente.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        These themes gives only a partial view of the cemetery.
+        Other interesting things were excluded.
+        But I am pleased with the result, and I have finally created a book!
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Questi temi danno solo una visione parziale del cimitero.
+        Altre cose interessanti sono state escluse.
+        Ma sono contento del risultato, e ho finalmente fatto un libro!
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        {\textsf{{\LARGE Technical details}}}
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        {\textsf{{\LARGE Dettagli tecnici}}}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Photos taken with a Nikon D50 and a Nikkor AF 35--70 mm 1:2.8 D lens.
+        Selection and processing done with Adobe Lightroom.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Foto fatte con una Nikon D50 e un obiettivo Nikkor AF 35--70 mm 1:2.8 D.
+        Selezione ed elaborazione fatta con Adobe Lightroom.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Book designed using \LaTeX\ and \XeTeX\ bundled with the Tex Live 2009 distribution packaged for Debian Linux.
+        Many thanks to Eric Jeschke for his blog posts and \LaTeX\ examples. See \href{http://redskiesatnight.com}{\tt redskiesatnight.com}.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Libro progettato utilizzando \LaTeX\ e \XeTeX\ inclusi nella distribuzione Tex Live 2009 per Debian Linux.
+        Molte grazie a Eric Jeschke per gli articoli nel suo blog e per i suoi esempi di \LaTeX. Vedi \href{http://redskiesatnight.com}{\tt redskiesatnight.com}.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        Fonts used \href{http://www.exljbris.com/fontin.html}{\textbf{Fontin}} and \href{http://www.exljbris.com/fontinsans.html}{\textsf{\textbf{Fontin Sans}}} from exljbris font foundry, \href{http://www.lekton.info/}{\texttt{\textbf{Lekton}}} from ISIA Urbino.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Caratteri usati \href{http://www.exljbris.com/fontin.html}{\textbf{Fontin}} e \href{http://www.exljbris.com/fontinsans.html}{\textsf{\textbf{Fontin Sans}}} realizzati da exljbris font foundry, \href{http://www.lekton.info/}{\texttt{\textbf{Lekton}}} realizzato dall'ISIA di Urbino.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        \LaTeX\ files put under a Creative Commons Attribution-Share Alike license
+        and shared on github: \href{https://github.com/maurotrb/sofobomo2011}{\tt github.com/maurotrb/sofobomo2011}.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        File \LaTeX\ rilasciati con licenza Creative Commons Attribution-Share Alike
+        e condivisi su github: \href{https://github.com/maurotrb/sofobomo2011}{\tt github.com/maurotrb/sofobomo2011}.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        {\textsf{{\LARGE Recommended Reading}}}
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        {\textsf{{\LARGE Letture consigliate}}}
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+        There are two interesting works on the history of the cemetery and on its most important tombs.
+
+        Unfortunately they are only in italians. See the column at the right.
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Laura Casavecchia,
+        \emph{Un cimitero ``ballerino''. Senigallia i Mastai e la questione del camposanto nel XIX secolo.}
+        Tesi di Laurea in Storia della città e del territorio, Università degli Studi di Bologna.
+        2006.
+        Reperibile all'indirizzo \href{http://librisenzacarta.it/2007/05/01/un-cimitero-ballerino/}{\tt librisenzacarta.it/2007/05/01/un-cimitero-ballerino/}.
+    \end{italian}
+}
+\ParallelPar
+\ParallelLText{
+    \begin{english}[variant=american]
+    \end{english}
+}
+\ParallelRText{
+    \begin{italian}
+        Donato Mori,
+        \emph{Visita Guidata ad alcune significative tombe ottocentesche nel Cimitero senigalliese.}
+        Distribuzione gratuita.
+        2007.
+        Reperibile presso la Biblioteca Comunale Antonelliana di Senigallia con la collocazione
+        MISCELLANEA SENIGALLIESE 18152.
+    \end{italian}
+}
+\ParallelPar
+\end{Parallel}
+
+\vspace*{\fill}
+
+\begin{center}
+{\textsf{{\large For comments and questions --- Per commenti e domande}}}
+
+{\tt \href{mailto:MauroTaraborelliPhoto@gmail.com}{MauroTaraborelliPhoto@gmail.com}}
+
+{\tt \href{http://www.maurotaraborelliphoto.com}{www.maurotaraborelliphoto.com}}
+
+\begin{pspicture}(1in,1in)
+\psbarcode{http://www.maurotaraborelliphoto.com}{}{qrcode}
+\end{pspicture}
+
+\end{center}
+
+%END

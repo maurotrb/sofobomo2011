@@ -1,0 +1,46 @@
+%
+% Senigallia Cemetery. The Old Part.
+% (c) 2011 Mauro Taraborelli (MauroTaraborelliPhoto@gmail.com).
+% This work is licensed under a Creative Commons Attribution-Share Alike
+% 3.0 Unported License
+% See http://creativecommons.org/licenses/by-sa/3.0/
+%
+% Mauro Taraborelli makes no representation about the suitability or accuracy
+% of this software or data for any purpose, and makes no warranties,
+% either express or implied, including merchantability and fitness for a
+% particular purpose or that the use of this software or data will not
+% infringe any third party patents, copyrights, trademarks, or other
+% rights.  The software and data are provided "as is". 
+% 
+% Derived from the work 'Chickens, Anyone?' by Eric R. Jeschke
+% http://redskiesatnight.com/books/pod/latex-templates-for-pod-publishing-with-blurb-com/
+% (c) 2006 Eric R. Jeschke (eric@redskieatnight.com).
+%
+% [common fonts definitions]
+%
+% You might be able to use opentype tools to find out the names of
+% the fonts you can use here, or you can just experiment
+%  $ otfinfo -a .../*.otf
+%
+\usepackage{fontspec}% font selecting commands
+\usepackage{xunicode}% unicode character macros
+\usepackage{xltxtra} % a few fixes and extras
+
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}     % to support TeX conventions like ‘‘--
+\setmainfont
+[ UprightFont = {* Regular} ,
+  BoldFont = {* Bold} ,
+  ItalicFont = {* Italic} ,
+  SmallCapsFont = {Fontin SmallCaps} ] % Can't use * for Fontin SmallCaps. See http://web.archiveorange.com/archive/v/tMRBZ9YChLvsIQr9Lqh2
+{Fontin}
+\setsansfont
+[ UprightFont = {* Regular} ,
+  BoldFont = {* Bold} ,
+  ItalicFont = {* Italic} ,
+  SmallCapsFont = {Fontin Sans Small Caps} ]
+{Fontin Sans}
+\setmonofont
+[ UprightFont = {*} ,
+  BoldFont = {* Bold} ,
+  ItalicFont = {* Italic} ]
+{Lekton}
