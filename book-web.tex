@@ -57,6 +57,17 @@
 % amount of space before each new paragraph begins
 \setlength{\parskip}{1em}
 
+% include common fonts definition
+\include{fonts}
+
+% include common color definition
+% use rgb for web PDF
+\usepackage
+[ rgb ,
+  xetex ]
+{xcolor}
+\include{colors}
+
 % used to include the photos
 \usepackage{graphicx}
 % where can I find the photos that will be imported for this version
@@ -98,11 +109,6 @@
 /Keywords (cemetery, colombarium, gates, flowers, decorations, Italy, photography) % set keywords
   >>
 }
-
-% include common fonts definition
-\include{fonts}
-% include common color definition
-\include{colors}
 
 % begin the document and suppress page numbers
 \begin{document}
