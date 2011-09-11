@@ -24,7 +24,7 @@ Files of interest
   Common fonts definition
 
 - _colors.tex_
-  Common colors definition
+  Common colors definition. Color are defined as rgb and cmyk.
 
 - _book-web.tex_
   Top level file for the book (web version) PDF. The resulting PDF was uploaded to SoFoBoMo 2011.
@@ -37,7 +37,9 @@ Files of interest
 
 Image preparation
 -----------------
-I create two directories, "photos.web" and "photos.book" which I populate with images downsampled to 144dpi and 300dpi, respectively, at the same "printed" dimensions (e.g. 8x6in).
+I create two directories, <code>photos.web</code> and <code>photos.book</code> which I populate with images downsampled to 144dpi and 300dpi, respectively, at the same "printed" dimensions (e.g. 8x6in).
+
+The images in <code>photos.book</code> are converted to CMYK using the color profile distributed by Blurb.
 
 Licensing
 ---------
@@ -57,6 +59,7 @@ The main differences among my work and Eric's one:
 - use pstricks and pst-barcode packages to create a QR code
 - use pstricks package to create the cover of the blurb book
 - use rake to build the books
+- book and cover for Blurb are created in CMYK
 
 Contacts
 --------
